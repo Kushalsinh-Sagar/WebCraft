@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebCraft - Professional Website Building Services">
+    <meta property="og:title" content="WebCraft - Modern Web Solutions">
+    <meta property="og:description" content="Professional Website Building Services - Modern, Responsive, and Custom Web Solutions">
+    <meta property="og:url" content="https://webcraft.com/home">
+    <meta property="og:type" content="website">
+    <base href="/">
+    <title>WebCraft | Professional Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="vanta-background"></div>
+    <div class="cursor"></div>
+    <header>
+        <nav class="floating-nav">
+            <div class="logo">
+                <div class="logo-icon">
+                    <span class="plus-icon">+</span>
+                </div>
+                <span>WebCraft</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li>
+                    <div class="cart-icon">
+                        <span class="cart-icon-custom">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        <span class="cart-count">0</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <button class="menu-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div id="vanta-background"></div>
+            <div class="hero-content">
+                <h1 data-aos="fade-up">
+                    <span class="gradient-text">Professional</span> Websites
+                    <br>for the Modern Era
+                </h1>
+                <p class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                    Crafting stunning, responsive websites that elevate your brand. From simple landing pages to 
+                    complex e-commerce solutions, we bring your digital vision to life.
+                </p>
+                <div class="hero-buttons">
+                    <button class="cta-button" data-aos="fade-up" data-aos-delay="400">Initialize Project</button>
+                    <button class="secondary-button" data-aos="fade-up" data-aos-delay="600">View Documentation</button>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50ms</span>
+                        <span class="stat-label">Latency</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 data-aos="fade-up">Quantum Solutions</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">🔮</div>
+                    <h3>Quantum Computing</h3>
+                    <p>Harnessing quantum superposition and entanglement for complex problem-solving</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon">🤖</div>
+                    <h3>Neural Networks</h3>
+                    <p>Deep learning systems inspired by biological neural networks</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-icon">🧬</div>
+                    <h3>Quantum Algorithms</h3>
+                    <p>Advanced quantum algorithms for optimization and cryptography</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages" class="packages">
+            <h2 data-aos="fade-up">Pricing Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="amount">$69</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Responsive Design</li>
+                        <li>5 Pages</li>
+                        <li>Basic SEO</li>
+                        <li>Contact Form</li>
+                        <li>Mobile Friendly</li>
+                        <li>1 Month Support</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="basic" data-price="69">Add to Cart</button>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-header">
+                        <h3>Portfolio Pro</h3>
+                        <div class="price">
+                            <span class="amount">$89</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Everything in Starter</li>
+                        <li>Portfolio Gallery</li>
+                        <li>Custom Animations</li>
+                        <li>Blog Setup</li>
+                        <li>Social Media Integration</li>
+                        <li>3 Months Support</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="portfolio" data-price="89">Add to Cart</button>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="package-header">
+                        <h3>Business</h3>
+                        <div class="price">
+                            <span class="amount">$99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Everything in Basic</li>
+                        <li>10 Pages</li>
+                        <li>Advanced SEO</li>
+                        <li>Blog Integration</li>
+                        <li>Social Media Integration</li>
+                        <li>Analytics Dashboard</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="business" data-price="99">Add to Cart</button>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="package-header">
+                        <h3>Startup Special</h3>
+                        <div class="price">
+                            <span class="amount">$129</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Everything in Business</li>
+                        <li>Lead Generation Forms</li>
+                        <li>Marketing Automation</li>
+                        <li>CRM Integration</li>
+                        <li>Analytics Dashboard</li>
+                        <li>6 Months Support</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="startup" data-price="129">Add to Cart</button>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="package-header">
+                        <h3>E-commerce</h3>
+                        <div class="price">
+                            <span class="amount">$169</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Everything in Business</li>
+                        <li>Full E-commerce Setup</li>
+                        <li>Product Management</li>
+                        <li>Payment Gateway Integration</li>
+                        <li>Inventory Management</li>
+                        <li>Order Tracking System</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="ecommerce" data-price="169">Add to Cart</button>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="package-header">
+                        <h3>Enterprise Plus</h3>
+                        <div class="price">
+                            <span class="amount">$499</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Everything in E-commerce</li>
+                        <li>Multi-language Support</li>
+                        <li>Advanced Security</li>
+                        <li>Load Balancing</li>
+                        <li>24/7 Priority Support</li>
+                        <li>Custom Integrations</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="enterprise" data-price="499">Add to Cart</button>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="750">
+                    <div class="package-header">
+                        <h3>Agency Pro</h3>
+                        <div class="price">
+                            <span class="amount">$799</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Everything in Enterprise Plus</li>
+                        <li>White Label Solutions</li>
+                        <li>Client Management Portal</li>
+                        <li>Automated Reporting</li>
+                        <li>Agency Analytics Suite</li>
+                        <li>Bulk Website Management</li>
+                        <li>Agency Training Program</li>
+                        <li>Dedicated Account Manager</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="agency" data-price="799">Add to Cart</button>
+                </div>
+
+                <div class="package-card" data-aos="fade-up" data-aos-delay="850">
+                    <div class="package-header">
+                        <h3>Global Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">$1499</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Everything in Agency Pro</li>
+                        <li>Global CDN Infrastructure</li>
+                        <li>Multi-Region Deployment</li>
+                        <li>Enterprise SLA</li>
+                        <li>Disaster Recovery</li>
+                        <li>Compliance Management</li>
+                        <li>Custom Security Protocols</li>
+                        <li>24/7 Executive Support</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="global" data-price="1499">Add to Cart</button>
+                </div>
+                
+                <div class="package-card premium" data-aos="fade-up" data-aos-delay="800">
+                    <div class="package-header">
+                        <h3>Premium Ultra</h3>
+                        <div class="price">
+                            <span class="amount">$999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>Custom Design from Scratch</li>
+                        <li>Unlimited Pages</li>
+                        <li>3D Animations & Effects</li>
+                        <li>AI-Powered Chatbot</li>
+                        <li>Advanced Analytics Suite</li>
+                        <li>Priority 24/7 Support</li>
+                        <li>Custom API Development</li>
+                        <li>Performance Optimization</li>
+                        <li>Security Hardening</li>
+                        <li>Monthly Maintenance</li>
+                    </ul>
+                    <button class="add-to-cart-btn" data-package="premium" data-price="999">Add to Cart</button>
+                </div>
+            </div>
+            <div class="custom-package-cta">
+                <h3>Need a Custom Solution?</h3>
+                <p>Let's build something unique together</p>
+                <a href="custom-package.html" class="custom-package-btn">Create Custom Package</a>
+            </div>
+        </section>
+
+        <section id="tech" class="tech-stack">
+            <h2 data-aos="fade-up">Our Tech Stack</h2>
+            <p class="tech-intro" data-aos="fade-up">Powered by cutting-edge technologies and frameworks</p>
+            <div class="tech-grid">
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
+                    <h3>Frontend Technologies</h3>
+                    <p>Modern UI Framework Usage</p>
+                    <div class="tech-stats">
+                        <div class="stat-bar" style="width: 95%"></div>
+                    </div>
+                    <ul class="tech-list">
+                        <li>React.js & Next.js for Dynamic UIs</li>
+                        <li>Vue.js & Nuxt.js for Progressive Apps</li>
+                        <li>TypeScript for Type-Safe Code</li>
+                        <li>TailwindCSS for Modern Styling</li>
+                        <li>Three.js for 3D Visualizations</li>
+                        <li>WebGL for Graphics Processing</li>
+                    </ul>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Backend Solutions</h3>
+                    <p>Server Performance Score</p>
+                    <div class="tech-stats">
+                        <div class="stat-bar" style="width: 90%"></div>
+                    </div>
+                    <ul class="tech-list">
+                        <li>Node.js & Express for Fast APIs</li>
+                        <li>Python & Django for Scalability</li>
+                        <li>PHP & Laravel for CMS</li>
+                        <li>GraphQL for Flexible Queries</li>
+                        <li>Microservices Architecture</li>
+                        <li>WebSocket for Real-time Data</li>
+                    </ul>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="300">
+                    <h3>Database Systems</h3>
+                    <p>Data Management Efficiency</p>
+                    <div class="tech-stats">
+                        <div class="stat-bar" style="width: 85%"></div>
+                    </div>
+                    <ul class="tech-list">
+                        <li>MongoDB for NoSQL Solutions</li>
+                        <li>PostgreSQL for Complex Data</li>
+                        <li>Redis for High-Speed Caching</li>
+                        <li>Firebase for Real-time Apps</li>
+                        <li>AWS DynamoDB for Scaling</li>
+                        <li>Elasticsearch for Search</li>
+                    </ul>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="400">
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Deployment & Scaling</p>
+                    <div class="tech-stats">
+                        <div class="stat-bar" style="width: 92%"></div>
+                    </div>
+                    <ul class="tech-list">
+                        <li>AWS & GCP Multi-Cloud Setup</li>
+                        <li>Docker for Containerization</li>
+                        <li>Kubernetes for Orchestration</li>
+                        <li>Terraform for Infrastructure</li>
+                        <li>CI/CD with GitHub Actions</li>
+                        <li>CloudFlare for CDN & Security</li>
+                    </ul>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="500">
+                    <h3>Security Measures</h3>
+                    <p>Protection & Compliance</p>
+                    <div class="tech-stats">
+                        <div class="stat-bar" style="width: 88%"></div>
+                    </div>
+                    <ul class="tech-list">
+                        <li>SSL/TLS with Auto-renewal</li>
+                        <li>OWASP Security Standards</li>
+                        <li>DDoS Protection Systems</li>
+                        <li>GDPR & CCPA Compliance</li>
+                        <li>WAF Implementation</li>
+                        <li>Regular Security Audits</li>
+                    </ul>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="600">
+                    <h3>Performance Tools</h3>
+                    <p>Speed Optimization</p>
+                    <div class="tech-stats">
+                        <div class="stat-bar" style="width: 94%"></div>
+                    </div>
+                    <ul class="tech-list">
+                        <li>Global CDN Distribution</li>
+                        <li>Advanced Image Optimization</li>
+                        <li>Lazy Loading Strategies</li>
+                        <li>Browser Caching Setup</li>
+                        <li>Code Splitting & Bundling</li>
+                        <li>Performance Monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2025, WebCraft has been at the forefront of web development innovation. Our journey began with a simple mission: to make premium web development accessible to businesses of all sizes.</p>
+                    
+                    <h3>Our Approach</h3>
+                    <p>We combine cutting-edge technology with creative design to deliver websites that not only look stunning but also perform exceptionally. Our team of experts ensures every project meets the highest standards of quality and innovation.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Team Members</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Countries Served</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-section">
+                    <h3>Our Team</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <img src="path/to/team1.jpg" alt="Team Member">
+                            </div>
+                            <h4>Kushalsinh Sagar</h4>
+                            <p>Founder & Lead Developer</p>
+                        </div>
+                        <!-- Add more team members as needed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2 data-aos="fade-up">Client Success Stories</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-card" data-tilt>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client">
+                        </div>
+                        <div class="client-details">
+                            <h4>Sarah Johnson</h4>
+                            <p>CTO, TechCorp</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The quantum computing solutions provided by WebCraft have revolutionized our data processing capabilities. Their expertise in implementing cutting-edge technologies has given us a significant competitive advantage."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+
+                <div class="testimonial-card" data-tilt>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client">
+                        </div>
+                        <div class="client-details">
+                            <h4>Michael Chen</h4>
+                            <p>Founder, StartupX</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"WebCraft's team delivered our e-commerce platform ahead of schedule. Their attention to detail and focus on performance optimization resulted in a 40% increase in our conversion rate."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+
+                <div class="testimonial-card" data-tilt>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Client">
+                        </div>
+                        <div class="client-details">
+                            <h4>Emma Rodriguez</h4>
+                            <p>Marketing Director, GlobalCo</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Initially skeptical about the AI integration, but WebCraft proved me wrong. The chatbot they implemented handles 70% of customer queries automatically, saving us significant resources."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+
+                <div class="testimonial-card incident-review" data-tilt>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Client">
+                        </div>
+                        <div class="client-details">
+                            <h4>David Thompson</h4>
+                            <p>CEO, DataFlow Inc</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"We experienced a brief service interruption, but WebCraft's incident response was exceptional. Their team resolved the issue within minutes and implemented additional safeguards. Their transparency and professionalism during the incident actually increased our trust in them."</p>
+                    <div class="rating">★★★★☆</div>
+                    <div class="incident-badge">Incident Review</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p class="contact-intro">Have a question or want to discuss your project? We'd love to hear from you!</p>
+            
+            <form class="contact-form" id="contact-form" onsubmit="return sendEmail(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <div class="chat-widget">
+            <button class="chat-toggle">
+                <i class="fas fa-comments"></i>
+            </button>
+            <div class="chat-box">
+                <div class="chat-header">
+                    <h3>AI Assistant</h3>
+                    <button class="close-chat">×</button>
+                </div>
+                <div class="chat-messages">
+                    <div class="message bot">
+                        👋 Hello! I'm EPOCH's AI assistant. How can I help you with our quantum computing solutions?
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message..." id="chat-input">
+                    <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - 2025, Made by Kushalsinh Sagar, All rights reserved.</p>
+    </footer>
+
+    <!-- Initialize Project Modal -->
+    <div class="modal-overlay" id="initializeModal">
+        <div class="modal">
+            <button class="modal-close">&times;</button>
+            <h2>Initialize Your Project</h2>
+            <p>Please enter your validation number to begin setting up your project. This number was sent to your email during registration.</p>
+            <form class="validation-form" id="validationForm">
+                <input type="text" placeholder="Enter Validation Number" required>
+                <button type="submit">Validate</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Documentation Modal -->
+    <div class="modal-overlay" id="documentationModal">
+        <div class="modal">
+            <button class="modal-close">&times;</button>
+            <h2>Package Documentation</h2>
+            <div class="documentation-content">
+                <div class="policy-section">
+                    <h3>Package Policies</h3>
+                    <ul>
+                        <li>All packages are billed monthly with the option to cancel anytime</li>
+                        <li>14-day money-back guarantee for all new subscriptions</li>
+                        <li>Packages can be upgraded at any time</li>
+                        <li>Downgrading requires 30-day notice</li>
+                        <li>Custom features can be added to any package</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Support & Maintenance</h3>
+                    <ul>
+                        <li>24/7 support for Enterprise and Premium packages</li>
+                        <li>Business hours support for other packages</li>
+                        <li>Monthly maintenance included in all packages</li>
+                        <li>Emergency support available for additional fee</li>
+                        <li>Regular security updates and backups included</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Development Process</h3>
+                    <ul>
+                        <li>Initial consultation and requirements gathering</li>
+                        <li>Design mockups and approval process</li>
+                        <li>Development phase with regular updates</li>
+                        <li>Testing and quality assurance</li>
+                        <li>Deployment and post-launch support</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h3>Additional Terms</h3>
+                    <ul>
+                        <li>Content must comply with our acceptable use policy</li>
+                        <li>Custom domain registration available</li>
+                        <li>SSL certificates included in all packages</li>
+                        <li>Data backup retention varies by package</li>
+                        <li>API usage limits apply based on package tier</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-In Modal -->
+    <div class="modal-overlay" id="signInModal">
+        <div class="modal">
+            <button class="modal-close">&times;</button>
+            <h2>Sign In</h2>
+            <form class="sign-in-form" id="signInForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+            <p class="sign-up-prompt">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="contact.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html> 

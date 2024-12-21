@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Plan - TechFuture</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/custom-plan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Copy navigation from index.html -->
+    
+    <main class="custom-plan-page">
+        <section class="hero custom-hero">
+            <h1 class="glitch-text">Build Your Perfect Plan</h1>
+            <p>Customize every aspect of your solution</p>
+        </section>
+        
+        <section class="plan-builder">
+            <div class="builder-container">
+                <div class="options-panel">
+                    <div class="option-group">
+                        <h3>Core Features</h3>
+                        <div class="feature-toggle">
+                            <label class="toggle">
+                                <input type="checkbox" data-feature="ai" data-price="49">
+                                <span class="slider"></span>
+                                <span class="label">AI Integration</span>
+                                <span class="price">$49/mo</span>
+                            </label>
+                        </div>
+                        <div class="feature-toggle">
+                            <label class="toggle">
+                                <input type="checkbox" data-feature="analytics" data-price="29">
+                                <span class="slider"></span>
+                                <span class="label">Advanced Analytics</span>
+                                <span class="price">$29/mo</span>
+                            </label>
+                        </div>
+                        <div class="feature-toggle">
+                            <label class="toggle">
+                                <input type="checkbox" data-feature="api" data-price="39">
+                                <span class="slider"></span>
+                                <span class="label">API Access</span>
+                                <span class="price">$39/mo</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <h3>Scale Options</h3>
+                        <div class="scale-slider">
+                            <label>Users
+                                <output>10</output>
+                            </label>
+                            <input type="range" min="10" max="100" value="10" step="10" data-price="5">
+                        </div>
+                        <div class="scale-slider">
+                            <label>Storage (GB)
+                                <output>50</output>
+                            </label>
+                            <input type="range" min="50" max="500" value="50" step="50" data-price="0.5">
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <h3>Add-ons</h3>
+                        <div class="feature-toggle">
+                            <label class="toggle">
+                                <input type="checkbox" data-feature="support" data-price="99">
+                                <span class="slider"></span>
+                                <span class="label">24/7 Priority Support</span>
+                                <span class="price">$99/mo</span>
+                            </label>
+                        </div>
+                        <div class="feature-toggle">
+                            <label class="toggle">
+                                <input type="checkbox" data-feature="training" data-price="199">
+                                <span class="slider"></span>
+                                <span class="label">Team Training</span>
+                                <span class="price">$199/mo</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-summary">
+                    <div class="summary-card">
+                        <h3>Your Custom Plan</h3>
+                        <div class="selected-features">
+                            <!-- Features will be listed here dynamically -->
+                        </div>
+                        <div class="price-breakdown">
+                            <div class="subtotal">
+                                <span>Subtotal</span>
+                                <span class="amount">$0/mo</span>
+                            </div>
+                            <div class="savings">
+                                <span>Bundle Savings</span>
+                                <span class="amount">-$0/mo</span>
+                            </div>
+                            <div class="total">
+                                <span>Total</span>
+                                <span class="amount">$0/mo</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary add-to-cart" data-plan="custom">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/custom-plan.js"></script>
+</body>
+</html> 
